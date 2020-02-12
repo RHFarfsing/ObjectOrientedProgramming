@@ -12,5 +12,9 @@ namespace AnimalLibrary {
         public Pug() : this("Spot"){
 
         }
+        public override string GetTypeOfDog() {
+            return "Pug";
+        }
+
     }
 }

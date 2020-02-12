@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AnimalLibrary;
 
 namespace ObjectOrientedProgramming {
@@ -25,6 +26,16 @@ namespace ObjectOrientedProgramming {
                 Name = "Ralph"
             };
             var boxer1 = new Boxer("Tyson");
+            var dogs = new List<Dog>();
+            dogs.Add(boxer1);
+            dogs.Add(pug);
+            dogs.Add(pug2);
+            dogs.Add(pug1);
+            dogs.Add(germanshepard);
+            dogs.Add(gs1);
+            foreach(var dog in dogs) {
+                Console.WriteLine(dog.GetTypeOfDog());
+            }
         }
     }
 }

@@ -12,5 +12,8 @@ namespace AnimalLibrary {
         }
         public GermanShephard() {
         }
+        public override string GetTypeOfDog() {
+            return "German Shephard";
+        }
     }
 }

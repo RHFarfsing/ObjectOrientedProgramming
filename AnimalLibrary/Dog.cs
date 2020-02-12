@@ -13,7 +13,14 @@ namespace AnimalLibrary {
 
         }
         public Dog(string Name) {
-            this.Name = Name;
+            if (Name == null) {
+                this.Name = "Doggo";
+            } else {
+                this.Name = Name;
+            }
+        }
+        public virtual string GetTypeOfDog() {
+            return "Dog";
         }
     }
 }

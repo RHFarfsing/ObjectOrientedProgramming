@@ -11,5 +11,9 @@ namespace AnimalLibrary {
         public Boxer() {
 
         }
+        public override string GetTypeOfDog() {
+            return "Boxer";
+        }
+
     }
 }
